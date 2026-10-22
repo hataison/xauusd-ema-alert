@@ -15,7 +15,7 @@ SYMBOL = "XAU/USD"
 INTERVAL = "5min"
 STEP = timedelta(minutes=5)
 FAST, SLOW = 50, 200
-LOOKBACK = 6            # also check the last 6 closed candles (30 min), so a late or skipped run still catches a cross
+LOOKBACK = 60            # also check the last 6 closed candles (30 min), so a late or skipped run still catches a cross
 STALE_AFTER = timedelta(minutes=20)   # newest closed candle older than this = market closed, stay quiet
 BKK = timezone(timedelta(hours=7))
 STATE_FILE = "state.json"
